@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #998235;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lamp {
+  width: 120px;
+  height: 120px;
+  /* border: 1px solid black; */
+  background-color: #fffbda;
+  background: linear-gradient(
+      104deg,
+      transparent 20%,
+      #fffbda 20% 60%,
+      transparent 60%
+    ),
+    linear-gradient(-104deg, transparent 20%, #fffbda 20% 60%, transparent 60%);
+  position: relative;
+}
+.rod {
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  left: calc(50% - 5px);
+  background-color: red;
+  bottom: 0;
+}
